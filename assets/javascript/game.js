@@ -1,21 +1,21 @@
 var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+var arrayWordsToGuess = ['dog', 'cat', 'bird', 'turtle', 'crocodile', 'alligator', 'giraffe', 'snake', 'platypus', 'hippopotamus']
+var arrayLettersGuessed = [];
 var game = {};
-
+// var random = Math.floor(Math.random() * arrayWordsToGuess.length) + 1;
 var firstRun = true;
 
-//call function init
 init();
 var numWrong = 0;
 var guessesRemaining = 10;
-//defined function init. prints in console log, "Game is running". Call function setRandomNumber.
-// finally will print user choices on page onUserInput
+
 function init() {
     console.log('', "Game is running");
     setRandomLetter();
     document.onkeyup = onUserInput;
+    // document.onkeyup = userLettersGuessed;
 }
-//function onUserInput event*e*. key,'key'(as seen in dev tools) of variable userInput event 'e'.
-//also prevents user from entering a key outside of array
+
 function onUserInput(e) {
     var userInput = e.key;
     if (alphabet.indexOf(userInput) === -1) {
@@ -85,8 +85,19 @@ function resetGuessesRemaining() {
 
 // function listLettersGuessed(e) {
 //     var userLettersGuessed = e.key;
-//     document.getElementById('letters-guessed').innerHTML = lettersGuessed;
-//     console.log(lettersGuessed);
+//     document.getElementById('letters-guessed').innerHTML = userLettersGuessed;
+//     document.write = userLettersGuessed;
+        // if (userLettersGuessed!===arrayLettersGuessed) {
+//             document.write =userLettersGuessed;
+//         }
+// // }
+
+
+
+// function chooseWord() {
+// var random = Math.floor(Math.random() * arrayWordsToGuess.length) + 1;
+// arrayWordsToGuess[random] = game.wordChoice
 // }
 
-// listLettersGuessed();
+// chooseWord();
+
