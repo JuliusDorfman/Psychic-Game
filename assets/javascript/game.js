@@ -6,13 +6,20 @@ var guessesRemaining = 10;
 var winCounter = 0;
 var lossCounter = 0;
 
+// Created an empty object on function init(). This function starts the game as well as clears any keystrokes left over from 
+// prior playthroughs of game.
+
 function init() {
     game = {};
     console.log('', "Game is running");
-    resetGuess();
     setRandomLetter();
+    resetGuess();
     document.onkeyup = onUserInput;
     resetlistLettersGuessed();
+
+// The function below expects an event onkeyup. The user will only be able to choose from
+// the values in the array. This is also where we compare if the correct keystroke has 
+// been detected. If TRUE; win and +=1 to the winCounter. We also compare to 0. If guessesRemaining == 0; lose and -+ to lossCounter.
 
 }
 
