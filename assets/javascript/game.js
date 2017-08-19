@@ -9,6 +9,7 @@ var lossCounter = 0;
 function init() {
     game = {};
     console.log('', "Game is running");
+    resetGuess();
     setRandomLetter();
     document.onkeyup = onUserInput;
     resetlistLettersGuessed();
@@ -106,6 +107,11 @@ function funWinCounter() {
 function funLossCounter() {
     lossCounter += 1;
     document.getElementById('loss-number').innerHTML = lossCounter;
+}
+
+function resetGuess() {
+    var clearSpace = ' ';
+    document.getElementById('user-input').innerHTML = clearSpace;
 }
 
 // UNUSED HANG-MAN CODE:
