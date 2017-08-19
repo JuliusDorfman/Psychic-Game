@@ -8,21 +8,17 @@
 </head>
 
 <body>
-<h1>Psychic Game!</h1>
-<h3>Computer picked: <span id="game-letter"></span></h3>
-
-
-<h3>You picked: <span id="user-input"></span></h3>
-
-<h3>Wrong guesses:<span id="wrong-counter"></span></h3>
-
-<h3>Guesses left:<span id="guesses-remaining"></span></h3>
-
-<h3>Letters guessed:<span id="letters-guessed"></span></h3>
-
-
-<script src="./assets/javascript/game.js"></script>
-
+    <h1>Psychic Game!</h1>
+    <h3>A mad artificial intelligence has chosen a letter. It's your job to guess what that letter is. And destroy it.</h3>
+    <hr>
+    <h3>You've got 10 tries to guess what letter I'm thinking of! <span> Hint: It's</span> <span id="game-letter"></span></h3>
+    <h3 class='wins'> Wins: <span id="win-number"></span></h3>
+    <h3 class='losses'> Losses: <span id='loss-number'></span></h3>
+    <h3>You picked: <span id="user-input"></span></h3>
+    <h3>Wrong guesses:<span id="wrong-counter"></span></h3>
+    <h3>Guesses left:<span id="guesses-remaining"></span></h3>
+    <h3>Letters guessed:<span id="letters-guessed"></span></h3>
+    <script src="./assets/javascript/game.js"></script>
 </body>
 
 </html>

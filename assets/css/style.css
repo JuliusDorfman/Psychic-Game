@@ -1,0 +1,27 @@
+* {
+	text-align: center;
+}
+
+h1 {
+    margin: 20px;
+    color: darkred;
+    font-size: 5em;
+}
+
+hr {
+    border-bottom: solid black 10px;
+}
+
+h3 {
+    margin: 20px;
+    font-style: 3em;
+}
+
+
+.wins {
+	font-size: 3.5em;
+}
+
+.losses {
+	font-size: 2em;
+}
